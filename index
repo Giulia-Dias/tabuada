@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: rgb(229, 232, 235);
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;        
+        }
+        header{
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 33vw;
+        }
+        section{
+          background-color: rgb(229, 232, 235);  
+          color: black;
+          padding: 10px;
+          border-radius: 10px;
+          width: 50%;
+          margin: auto;
+        }
+        #button{
+            background-color: blue;
+            color: rgb(229, 232, 235);
+            border: 0px;
+            width: 150px;
+            height: 30px;
+            border-radius: 10px;
+        }
+        .form{
+            margin: 8px;
+            border-radius: 10px;
+            border: 0px;
+            height: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+    <div>
+        <p>
+            Qual tabuada vc deseja saber?<br>
+            <input type="number" class="form" id="num"> 
+        </p>
+        <p>
+            Até qual número você quer?<br>
+            <input type="number" class="form" id="end">
+        </p>
+        <p>
+            <input type="button" value="Calcular" id="button" onclick="Tabuada()">
+        </p>
+    </div>
+    <div id="resposta">
+        Preencha os valores acima 
+    </div>
+    </section>
+    <script src="tabuada_script.js">
+
+    </script>
+
+</body>
+</html>
